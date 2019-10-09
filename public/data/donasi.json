@@ -1,0 +1,34 @@
+{
+    "donasi": [
+        {
+            "kategori": "donasi",
+            "nama": "donasi sumber rezeki",
+            "deskripsi": "adf asdf adsf adsf asdf adsf   adsfasdfad",
+            "harga": 40000,
+            "gambar": "ssk.jpeg"
+        },
+        {
+            "kategori": "zakat",
+            "nama": "zakat untuk negeri",
+            "deskripsi": "adf asdf adsf adsf asdf adsf   adsfasdfad",
+            "harga": 40000,
+            "gambar": "bpuasa.jpeg"
+        },
+        {
+            "kategori": "zakat",
+            "nama": "zakat untuk negeri",
+            "deskripsi": "adf asdf adsf adsf asdf adsf   adsfasdfad",
+            "harga": 40000,
+            "gambar": "bpuasa.jpeg"
+        },
+        {
+            "kategori": "zakat",
+            "nama": "zakat untuk negeri",
+            "deskripsi": "adf asdf adsf adsf asdf adsf   adsfasdfad",
+            "harga": 40000,
+            "gambar": "bpuasa.jpeg"
+        }
+    ]
+
+
+}

@@ -4,9 +4,15 @@ class Home extends Controller {
     public function index()
     {
         // $data['nama'] = $this->model('User_model')->getUser();
-        // $this->view('templates/header-signin');
+        $this->view('templates/header-order-donasi');
         $this->view('home/index');
         // $this->view('templates/footer');
+    }
+
+    public function formOrder()
+    {
+        $this->view('templates/header-order-donasi');
+        $this->view('home/order');
     }
 
     public function login()

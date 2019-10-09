@@ -8,7 +8,7 @@ class Menu_model {
         $this->db = new Database;
     }
     
-    // $menuMaster = querySelect("SELECT * FROM V_PORTAL_MENU_USER WHERE user_id = $isID AND menu = 'parameter' AND deskripsi = 'menu' ORDER BY urutan");
+// $menuMaster = querySelect("SELECT * FROM V_PORTAL_MENU_USER WHERE user_id = $isID AND menu = 'parameter' AND deskripsi = 'menu' ORDER BY urutan");
 // $menuIT = querySelect("SELECT * FROM V_PORTAL_MENU_USER WHERE user_id = $isID AND menu = 'it' AND deskripsi = 'menu' ORDER BY urutan");
 // $menuFR = querySelect("SELECT * FROM V_PORTAL_MENU_USER WHERE user_id = $isID AND menu = 'fr' AND deskripsi = 'menu' ORDER BY urutan");
 // $menuOta = querySelect("SELECT * FROM V_PORTAL_MENU_USER WHERE user_id = $isID AND menu = 'ota' AND deskripsi = 'menu' ORDER BY urutan");

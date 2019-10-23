@@ -1,21 +1,21 @@
 <?php
 
-	$data = file_get_contents(BASEURL."/data/donasi.json");
-	$donasi = json_decode($data, true)[donasi];
-
+	// $data = file_get_contents(BASEURL."/data/donasi.json");
+	// $donasi = json_decode($data, true)[donasi];
+	// var_dump($data['kampanye']);
 ?>
-
+ 
 	<div class="container">
 
-		<div class="row mt-3">
-			<?php foreach($donasi as $don) : ?>
-			<div class="col-md-4">
+		<div class="row mt-4">
+			<?php foreach($data['kampanye'] as $don) : ?>
+			<div class="col-md-3">
 				<div class="card mb-3">
-					<img src="<?= BASEURL ?>/img/donasi/<?= $don["gambar"] ?>" class="card-img-top" alt="...">
+					<img src="<?= BASEURL ?>/img/donasi/<?= $don["poster"] ?>" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title"><?= $don["nama"] ?></h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<a href="<?= BASEURL ?>/home/formOrder" class="btn btn-primary">Donasi</a>
+						<h5 class="card-title"><?= $don["judul"] ?></h5>
+						<p class="card-text"><?= $don["deskripsi"] ?></p>
+						<a href="<?= BASEURL ?>/home/formOrder/<?= $don['donasi_id'] ?>" class="btn btn-success btn-block">Donasi</a>
 					</div>
 				</div>
 			</div>

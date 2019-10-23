@@ -3,16 +3,19 @@
 class Home extends Controller {
     public function index()
     {
-        // $data['nama'] = $this->model('User_model')->getUser();
+        $data['kampanye'] = $this->model('Kampanye_model')->getAllCampaign();
+
         $this->view('templates/header-order-donasi');
-        $this->view('home/index');
+        $this->view('home/index', $data);
         // $this->view('templates/footer');
     }
 
-    public function formOrder()
+    public function formOrder($id)
     {
+        $data['kampanye'] = $this->model('Kampanye_model')->getCampaign($id);
+
         $this->view('templates/header-order-donasi');
-        $this->view('home/order');
+        $this->view('home/order', $data);
     }
 
     public function login()

@@ -27,6 +27,7 @@
 					<a class="nav-item nav-link" href="#">Donasi</a>
 					<a class="nav-item nav-link" href="#">Zakat</a>
 					<a class="nav-item nav-link" href="#">Wakaf</a>
+					<a class="nav-item nav-link" href="#">Qurban</a>
 				</div>
 			</div>
 		</div>

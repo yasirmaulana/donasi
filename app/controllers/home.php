@@ -5,7 +5,7 @@ class Home extends Controller {
     {
         $data['kampanye'] = $this->model('Kampanye_model')->getAllCampaign();
 
-        $this->view('templates/header-order-donasi');
+        // $this->view('templates/header-order-donasi');
         $this->view('home/index', $data);
         // $this->view('templates/footer');
     }

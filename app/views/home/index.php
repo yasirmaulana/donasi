@@ -1,33 +1,129 @@
-<?php
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!--Import Google Icon Font-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!--Import materialize.css-->
+            <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+            <link rel="stylesheet" href="style.css">
+            <!--Let browser know website is optimized for mobile-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <title>Berbagi</title>
+        </head>
 
-	// $data = file_get_contents(BASEURL."/data/donasi.json");
-	// $donasi = json_decode($data, true)[donasi];
-	// var_dump($data['kampanye']);
-?>
- 
-	<div class="container">
+        <body>
 
-		<div class="row mt-4">
-			<?php foreach($data['kampanye'] as $don) : ?>
-			<div class="col-md-3">
-				<div class="card mb-3">
-					<img src="<?= BASEURL ?>/img/donasi/<?= $don["poster"] ?>" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title"><?= $don["judul"] ?></h5>
-						<p class="card-text"><?= $don["deskripsi"] ?></p>
-						<a href="<?= BASEURL ?>/home/formOrder/<?= $don['donasi_id'] ?>" class="btn btn-success btn-block">Donasi</a>
-					</div>
-				</div>
-			</div>
-			<?php endforeach; ?>
-		</div>
+            <!-- Navbar  -->
+            <div class="navbar-fixed">
+                <nav class="green darken-1">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo">
+                                <img src="<?= BASEURL ?>/img/logo-kauny.png" width="60">
+                            </a>
+                            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="">Donasi</a></li>
+                                <li><a href="">Zakat</a></li>
+                                <li><a href="">Wakaf</a></li>
+                                <li><a href="">Qurban</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
 
-	</div>
+                <ul class="sidenav" id="mobile-nav">
+                    <li><a href="">Donasi</a></li>
+                    <li><a href="">Zakat</a></li>
+                    <li><a href="">Wakaf</a></li>
+                    <li><a href="">Qurban</a></li>
+                </ul>
+            </div>
 
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+            <!-- slider  -->
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="<?= BASEURL ?>/img/slider/donasi.jpg">
+                        <div class="caption left-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="<?= BASEURL ?>/img/slider/zakat.jpg">
+                        <div class="caption right-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="<?= BASEURL ?>/img/slider/wakaf.jpg">
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="<?= BASEURL ?>/img/slider/kurban.jpg">
+                        <div class="caption left-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-</body>
-</html>
+            <!-- status penerimaan -->
+            <section id="stPenerima" name="stPernerima">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="center light green-text text-darken-3">Status Penerimaan</h3>
+                        <div class="col m4 light">
+                            <h5 class="center">1.234.456.789</h5>
+                            <p class="center">Dana terkumpul</p>
+                        </div>
+                        <div class="col m4 light">
+                            <h5 class="center">35.234</h5>
+                            <p class="center">Donatur</p>
+                        </div>
+                        <div class="col m4 light">
+                            <h5 class="center">13</h5>
+                            <p class="center">Program</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            const sideNav = document.querySelectorAll('.sidenav')
+            M.Sidenav.init(sideNav)
+        
+            const slider = document.querySelectorAll('.slider')
+            M.Slider.init(slider, {
+                indicators: false,
+                height: 500,
+                duration: 500,
+                interval: 3000
+            })
+        </script>
+
+        </body>
+  </html>
+        

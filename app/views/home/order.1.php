@@ -42,46 +42,50 @@
 ?>
 
 	<div class="container">
-		<div class="row">
 
-			<div class="col m6 s12">
-				<img src="<?= BASEURL ?>/img/donasi/<?= $data['kampanye']['poster'] ?> " height="300">
-				<h4><?= $data['kampanye']['judul']; ?></h4>
-				<?= $data['kampanye']['deskripsi']; ?>
+		<div class="row mt-3">
+			<div class="col-md-8 mt-3">
+				<div class="container">
+					<div class="row">
+						<img src="<?= BASEURL ?>/img/donasi/<?= $data['kampanye']['poster'] ?> " 
+						class="img-thumbnail" height="50%">
+					</div>
+
+					<div class="row mt-3">
+						<h4><?= $data['kampanye']['judul']; ?></h4>
+					</div>
+
+					<div class="row mt-3">
+						<?= $data['kampanye']['deskripsi']; ?>
+					</div>
+
+				</div>
 			</div>
 			
-			<div class="col m6 s12">
-				<div class="card center hoverable">
-					<div class="card-image"></div>
-					<div class="card-content">
-						<h5 class="light green-text">Masukan Nilai Donasi Anda</h5>
-						<div class="row">
-							<form  action="" method="post" class="col s12">
-								<!-- <div class="row"> -->
-									<div class="input-field col s12">
-										<input type="hidden" class="form-control" id="order_id" name="order_id">
-										<input placeholder="Rupiah" type="number" class="validate" min="5000" maxlength="13" id="grossAmount" name="gross_amount" Required>
-									</div>
-								<!-- </div> -->
-								<!-- <div class="row"> -->
-									<div class="input-field col s12">
-										<input placeholder="Nama" type="text" class="validate" id="nama" name="nama">
-									</div>
-								<!-- </div> -->
-								<!-- <div class="row"> -->
-									<div class="input-field col s12">
-										<input placeholder="Nomor Whatsapp (Wajib diisi)" type="text" class="validate" id="no_wa" name="no_wa" Required>
-									</div>
-								<!-- </div> -->
-							<button type="submit" class="btn btn-outline-success btn-block" name="btn-order">Ajukan Donasi</button>
+			<div class="col-md-4 mt-3"> 
+				<div class="row bg-light">
+				<div class="container">
+					<div class="row mt-4 mb-4">
+						<div class="col-md-12">
+							<form action="" method="post">
+								<div class="form-group">
+									<input type="hidden" class="form-control" id="order_id" name="order_id" placeholder="order id">
+									<small class="form-text text-muted">Masukan Nilai Donasi Anda</small>
+									<input type="text" class="form-control form-control-lg bg-warning text-dark" min="5000" maxlength="13" id="grossAmount" name="gross_amount"  placeholder="Rp.    " Required>
+								</div>
+								<hr>
+								<div class="form-group">
+									<input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="no_wa" name="no_wa" placeholder="Nomor Whatsapp (Wajib diisi)" Required>
+								</div>
+								<button type="submit" class="btn btn-outline-success btn-block" name="btn-order">Ajukan Donasi</button>
+
 							</form>
 						</div>
 					</div>
-					<!-- <div class="card-action"> -->
-							<!-- <a href="<?= BASEURL ?>/home/formOrder/<?= $don['donasi_id'] ?>" class="waves-effect waves-light btn green">Donasi Sekarang</a> -->
-						<!-- </form> -->
-
-					<!-- </div> -->
+				</div>
 				</div>
 			</div>
 

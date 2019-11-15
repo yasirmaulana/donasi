@@ -25,7 +25,7 @@
                                 <li><a href="">Donasi</a></li>
                                 <li><a href="">Zakat</a></li>
                                 <li><a href="">Wakaf</a></li>
-                                <li><a href="">Qurban</a></li>
+                                <li><a href="">Laporan</a></li>
                             </ul>
                         </div>
                     </div>
@@ -35,6 +35,6 @@
                     <li><a href="">Donasi</a></li>
                     <li><a href="">Zakat</a></li>
                     <li><a href="">Wakaf</a></li>
-                    <li><a href="">Qurban</a></li>
+                    <li><a href="">Laporan</a></li>
                 </ul>
             </div>

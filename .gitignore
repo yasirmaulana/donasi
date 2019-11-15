@@ -1,7 +1,7 @@
-app/config/
-public/bower_components
-public/build
-public/Classes
-public/css
-public/dist
-public/plugins
+# app/config/
+# public/bower_components
+# public/build
+# public/Classes
+# public/css
+# public/dist
+# public/plugins

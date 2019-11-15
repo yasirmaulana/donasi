@@ -25,7 +25,7 @@ class Mahasiswa extends Controller {
     {
         // $cek = $this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST);
         // var_dump($cek);
-        // exit();
+        // exit(); 
 
         if( $this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST) > 0 ) {
             header('Location: ' . BASEURL . '/mahasiswa');

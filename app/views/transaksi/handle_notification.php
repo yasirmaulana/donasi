@@ -3,11 +3,7 @@ require_once(dirname(__FILE__) . '/Veritrans.php');
 Veritrans_Config::$isProduction = false;
 Veritrans_Config::$serverKey = 'SB-Mid-server-vjnasHbf1Rxmx2mz7-DfVyxQ';
 
-
-
 if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
-
-
  try {
   $notif = new Veritrans_Notification();
 } catch (Exception $e) {

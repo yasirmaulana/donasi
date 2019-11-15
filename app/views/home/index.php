@@ -24,9 +24,9 @@
                             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
                                 <li><a href="">Donasi</a></li>
-                                <li><a href="">Zakat</a></li>
+                                <!-- <li><a href="">Zakat</a></li> -->
                                 <li><a href="">Wakaf</a></li>
-                                <li><a href="">Qurban</a></li>
+                                <li><a href="">Laporan</a></li>
                             </ul>
                         </div>
                     </div>
@@ -34,9 +34,9 @@
 
                 <ul class="sidenav" id="mobile-nav">
                     <li><a href="">Donasi</a></li>
-                    <li><a href="">Zakat</a></li>
+                    <!-- <li><a href="">Zakat</a></li> -->
                     <li><a href="">Wakaf</a></li>
-                    <li><a href="">Qurban</a></li>
+                    <li><a href="">Laporan</a></li>
                 </ul>
             </div>
 
@@ -50,13 +50,13 @@
                             <h5 class="light grey-text text-lighten-3">Membuat mereka tersenyum.</h5>
                         </div>
                     </li>
-                    <li>
+                    <!-- <li>
                         <img src="<?= BASEURL ?>/img/slider/zakat.jpg">
                         <div class="caption left-align">
                             <h3>#YuksZakat</h3>
                             <h5 class="light grey-text text-lighten-3">Bersihkan Harta, Sucikan Jiwa.</h5>
                         </div>
-                    </li>
+                    </li> -->
                     <li>
                         <img src="<?= BASEURL ?>/img/slider/wakaf.jpg">
                         <div class="caption left-align">
@@ -64,18 +64,18 @@
                             <h5 class="light grey-text text-lighten-3">Harta itu dibawa mati, dengan cara di Wakafkan.</h5>
                         </div>
                     </li>
-                    <li>
+                    <!-- <li>
                         <img src="<?= BASEURL ?>/img/slider/kurban.jpg">
                         <div class="caption left-align">
                             <h3>This is our big Tagline!</h3>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
             <!-- status penerimaan -->
-            <section id="stPenerima" name="stPernerima">
+            <!-- <section id="stPenerima" name="stPernerima">
                 <div class="container">
                     <div class="row">
                         <h3 class="center light green-text text-darken-3">Status Penerimaan</h3>
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- kampanye -->
             <section id="kampanye" class="kampanye grey lighten-3">
@@ -111,7 +111,7 @@
                                     <?= $don["deskripsi"] ?>
                                 </div>
                                 <div class="card-action">
-                                    <a href="<?= BASEURL ?>/home/formOrder/<?= $don['donasi_id'] ?>" class="waves-effect waves-light btn green">Donasi Sekarang</a>
+                                    <a href="<?= BASEURL ?>/transaksi/index/<?= $don['donasi_id'] ?>" class="waves-effect waves-light btn green">Donasi Sekarang</a>
 
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                 <div class="container">
                     <div class="row center green lighten-4">
                         <h5>Lihat Semua Program Donasi Yang Sudah Diselenggarakan</h5>
-                        <a href="<?= BASEURL ?>/home/formOrder/<?= $don['donasi_id'] ?>" class="waves-effect waves-light btn green darken-2">Lihat semua program donasi</a>
+                        <a href="" class="waves-effect waves-light btn green darken-2">Lihat semua program donasi</a>
 
                     </div>
                 </div>
@@ -137,39 +137,36 @@
               <div class="parallax"><img src="<?= BASEURL ?>/img/slider/wakaf.jpg" height="900"></div>
             </div>
 
-
-            <!-- footer -->
-            <footer class="page-footer grey darken-1">
+            <!-- zakat -->
+            <!-- <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 s12">
-                            <h5 class="white-text">
-                            <img src="<?= BASEURL ?>/img/logo-kauny.png" width="90">
-                            <!-- Askar Kauny -->
-                            </h5>
-                            <p class="grey-text light text-lighten-4">sebuah lembaga filantropi yang bergerak dibidang "membumikan quran".</p>
+                        <div class="col m8">
+                            <div class="card">
+                                <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-tabs">
+                                <ul class="tabs tabs-fixed-width">
+                                    <li class="tab"><a href="#test4">Test 1</a></li>
+                                    <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                                    <li class="tab"><a href="#test6">Test 3</a></li>
+                                </ul>
+                                </div>
+                                <div class="card-content grey lighten-4">
+                                <div id="test4">Test 1</div>
+                                <div id="test5">Test 2</div>
+                                <div id="test6">Test 3</div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col m4">
 
-                        <div class="col l4 offset-l2 s12">
-                            <h5 class="white-text light">Tautan</h5>
-                            <ul>
-                                <li><a class="grey-text light text-lighten-3" href="#!"> Beranda</a></li>
-                                <li><a class="grey-text light text-lighten-3" href="#!"> Laporan</a></li>
-                                <li><a class="grey-text light text-lighten-3" href="#!"> Tentang Kami</a></li>
-                            </ul>
                         </div>
-
-
                     </div>
                 </div>
-                <div class="footer-copyright">
-                    <div class="container light ">
-                        © 2019 Copyright Askar Kauny
-                        <a class="grey-text text-lighten-4 right" href="https://atsiri.id">Power By atsiri.id All rights reserved.</a>
-                    </div>
-                </div>
-            </footer>
-
+            </section> -->
+         
 
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="<?= BASEURL ?>/js/materialize.min.js"></script>

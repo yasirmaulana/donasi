@@ -1,13 +1,13 @@
 <?php
 
 class Kampanye_model {
-    private $table = 'kampanye';
+    private $table = 'V_KAMPANYE';
     private $db;
 
     public function __construct()
     {
         $this->db = new Database;
-    }
+    } 
 
     public function getAllCampaign()
     {

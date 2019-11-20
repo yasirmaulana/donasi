@@ -9,6 +9,13 @@
             <!--Let browser know website is optimized for mobile-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <title>Berbagi</title>
+            <style>
+                .label {
+                    width: 100px;
+                    height: 20px;
+                    background-color: green;
+                }
+            </style>
         </head>
 
         <body>
@@ -23,20 +30,20 @@
                             </a>
                             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
-                                <li><a href="">Donasi</a></li>
+                                <li><a href="#kampanye">Donasi</a></li>
                                 <!-- <li><a href="">Zakat</a></li> -->
-                                <li><a href="">Wakaf</a></li>
-                                <li><a href="">Laporan</a></li>
+                                <!-- <li><a href="">Wakaf</a></li> -->
+                                <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
                 <ul class="sidenav" id="mobile-nav">
-                    <li><a href="">Donasi</a></li>
+                    <li><a href="#kampanye">Donasi</a></li>
                     <!-- <li><a href="">Zakat</a></li> -->
-                    <li><a href="">Wakaf</a></li>
-                    <li><a href="">Laporan</a></li>
+                    <!-- <li><a href="">Wakaf</a></li> -->
+                    <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
                 </ul>
             </div>
 
@@ -96,10 +103,10 @@
             </section> -->
 
             <!-- kampanye -->
-            <section id="kampanye" class="kampanye grey lighten-3">
+            <section id="kampanye" class="kampanye grey lighten-3 scrollspy">
                 <div class="container">
                     <div class="row">
-                        <h3 class="light center green-text text-darken-3">Our Campaign</h3>
+                        <!-- <h3 class="light center green-text text-darken-3">Our Campaign</h3> -->
                         <?php foreach($data['kampanye'] as $don) : ?>
                         <div class="col m4 s12">
                             <div class="card center hoverable">
@@ -107,6 +114,9 @@
                                     <img src="<?= BASEURL ?>/img/donasi/<?= $don["poster"] ?>">
                                     <!-- <span class="card-title"><?= $don["judul"] ?></span> -->
                                 </div>
+                                <!-- <div class="card-title">
+                                    <div class="label"></div>         
+                                </div> -->
                                 <div class="card-content">
                                     <?= $don["deskripsi"] ?>
                                 </div>
@@ -127,15 +137,15 @@
                 <div class="container">
                     <div class="row center green lighten-4">
                         <h5>Lihat Semua Program Donasi Yang Sudah Diselenggarakan</h5>
-                        <a href="" class="waves-effect waves-light btn green darken-2">Lihat semua program donasi</a>
+                        <a href="<?= BASEURL ?>/home/allCampaign" class="waves-effect waves-light btn green darken-2">Lihat semua program donasi</a>
 
                     </div>
                 </div>
             </section>
 
-            <div class="parallax-container">
+            <!-- <div class="parallax-container">
               <div class="parallax"><img src="<?= BASEURL ?>/img/slider/wakaf.jpg" height="900"></div>
-            </div>
+            </div> -->
 
             <!-- zakat -->
             <!-- <section>
@@ -184,6 +194,11 @@
 
             const parallax = document.querySelectorAll('.parallax')
             M.Parallax.init(parallax)
+
+            const scroll = document.querySelectorAll('.scrollspy')
+            M.ScrollSpy.init(scroll, {
+                 scrollOffset: 20
+            })
         </script>
 
         </body>

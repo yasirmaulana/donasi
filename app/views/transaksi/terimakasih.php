@@ -74,15 +74,15 @@
                     </div>
                     <div class="row">
                         selain detail jumlah donasi dan cara pembayaran di pop up tadi, kami juga akan 
-                        mengirimkan email
+                        mengirimkan email anda
                         <p>Terima kasih
                     </div>
                     <div class="row">
                         <div class="col m6 s12">
-                            <a href="" class=" red-text text-lighten-3">Lihat Program Lainnya</a>
+                            <a href="<?= BASEURL ?>/home/allCampaign" class=" red-text text-lighten-3">Lihat Program Lainnya</a>
                         </div>
                         <div class="col m6 s12">
-                            <a href="" class=" green-text text-darken-1">Kontak Admin Kami</a>
+                            <a href="<?= BASEURL ?>/transaksi/kontakadmin" class=" green-text text-darken-1">Kontak Admin Kami</a>
                         </div>
                     </div>
                 </div>  

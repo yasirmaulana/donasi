@@ -1,9 +1,7 @@
-<!-- contact -->
-<section id="contact" class="contact grey lighten-3 scrollspy light">
+<section id="contact" class="contact grey lighten-3 light">
     <div class="container">
         <div class="row">
-            <div class="col m7 s12">
-                <h3>GET IN TOUCH</h3>
+            <div class="col m12 s12">
                 <p><b>Yayasan Askar Kauny</b> adalah lembaga non profit yang bergerak di bidang sosial dan pendidikan, 
                     serta berkhidmat dalam mencetak generasi penghafal Alquran. Mengaplikasin Metode Kauny dengan taglinenya 
                     <b>Menghafal Alquran Semudah Tersenyum</b> dalam setiap program dan kegiatan, yaitu metode yang menyelaraskan otak kanan, 
@@ -11,33 +9,6 @@
                 <p><i class="material-icons">map</i> JL. Raya Setu No. 63 RT 003/003 Cipayung Jakarta Timur 13880</p>
                 <p><i class="material-icons">phone_android</i> (021) 2867 2216 / 0878 7722 1200 (wa)</p>
                 <p><i class="material-icons">email</i> crm@askarkauny.com</p>
-            </div>
-            <div class="col m5 s12">
-                <!-- <h3>say what you need?</h3> -->
-                <form action="" method="post">
-                    <div class="card-panel">
-                        <div class="input-field">
-                            <input type="text" id="name" name="Name" class="validate">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="input-field">
-                            <input type="number" id="nowa" name="nowa" required class="validate">
-                            <label for="nowa">Whatsapp Number</label>
-                        </div>
-                        <div class="input-field">
-                            <input type="email" id="email" name="email" required class="validate">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1">Message</label>
-                        </div>
-                        <button type="submit" name="submit" class="btn green darken-3">
-                            SEND MESSAGE
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </form>
             </div>
         </div>                    
     </div>
@@ -90,8 +61,8 @@
     M.FloatingActionButton.init(floatBnt, {
         direction: 'top'
     })
-
 </script>
-        
+
+
 </body>
 </html>

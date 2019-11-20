@@ -9,14 +9,14 @@ class Home extends Controller {
         $this->view('templates/footer');
     }
 
-    // public function formOrder($id)
-    // {
-    //     $data['kampanye'] = $this->model('Kampanye_model')->getCampaign($id);
+    public function allCampaign()
+    {
+        $data['kampanye'] = $this->model('Kampanye_model')->getAllCampaign();
 
-    //     $this->view('templates/header-order');
-    //     $this->view('home/order', $data);
-    //     $this->view('templates/footer');
-    // }
+        $this->view('templates/header-order');
+        $this->view('home/allcampaign', $data);
+        $this->view('templates/footer');
+    }
 
     public function login()
     {

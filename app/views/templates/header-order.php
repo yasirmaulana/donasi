@@ -13,7 +13,7 @@
             <title>Berbagi</title>
         </head>
 
-            <body>
+        <body>
             <!-- Navbar  -->
             <div class="navbar-fixed">
                 <nav class="green darken-1">
@@ -24,19 +24,15 @@
                             </a>
                             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
-                                <li><a href="">Donasi</a></li>
-                                <!-- <li><a href="">Zakat</a></li> -->
-                                <li><a href="">Wakaf</a></li>
-                                <li><a href="">Laporan</a></li>
+                                <li><a href="<?= BASEURL ?>/home/allCampaign">Donasi</a></li>
+                                <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
                 <ul class="sidenav" id="mobile-nav">
-                    <li><a href="">Donasi</a></li>
-                    <!-- <li><a href="">Zakat</a></li> -->
-                    <li><a href="">Wakaf</a></li>
-                    <li><a href="">Laporan</a></li>
+                    <li><a href="<?= BASEURL ?>/home/allCampaign">Donasi</a></li>
+                    <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
                 </ul>
             </div>

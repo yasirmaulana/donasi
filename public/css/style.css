@@ -10,3 +10,10 @@ section {
 .parallax-container {
     height: 240px;
 }
+
+.label {
+    width: 100px;
+    height: 10px;
+    background-color: green;
+}
+

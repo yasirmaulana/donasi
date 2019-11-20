@@ -7,7 +7,7 @@ class Transaksi extends Controller {
 
         $this->view('templates/header-order');
         $this->view('transaksi/order', $data);
-        $this->view('templates/footer');
+        $this->view('templates/footer2');
     }
 
     public function tambahTransaksiDonasi()
@@ -37,6 +37,11 @@ class Transaksi extends Controller {
 
         $this->view('templates/header-order');
         $this->view('transaksi/terimakasih', $data);
+    }
+
+    public function kontakAdmin()
+    {
+        $this->view('transaksi/kontakadmin');
     }
 
 }

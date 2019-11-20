@@ -86,7 +86,7 @@
 									<input placeholder="Nomor Whatsapp (Wajib diisi)" type="text" class="validate" id="no_wa" name="no_wa" Required>
 								</div>
 								<div class="input-field col s12">
-									<input placeholder="Email" type="text" class="validate" id="email" name="email">
+									<input placeholder="Email" type="text" class="validate" id="email" name="email" Required>
 								</div>
 									<input type="hidden" class="validate" id="donasiId" name="donasiId" value="<?= $data['kampanye']['donasi_id'] ?>">
 									<input type="hidden" class="validate" id="kodeDonasi" name="kodeDonasi" value="<?= $data['kampanye']['inisial'] . date("YmdHis") ?>">
@@ -136,6 +136,3 @@
 					return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 			}
     </script>
-
-<!-- </body>
-</html> -->

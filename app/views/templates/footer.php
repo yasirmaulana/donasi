@@ -14,14 +14,14 @@
             </div>
             <div class="col m5 s12">
                 <!-- <h3>say what you need?</h3> -->
-                <form action="" method="post">
+                <form action="<?= BASEURL; ?>/feedback/index" method="post">
                     <div class="card-panel">
                         <div class="input-field">
-                            <input type="text" id="name" name="Name" class="validate">
+                            <input type="text" id="name" name="nama" required class="validate">
                             <label for="name">Name</label>
                         </div>
                         <div class="input-field">
-                            <input type="number" id="nowa" name="nowa" required class="validate">
+                            <input type="number" id="nowa" name="no_wa" required class="validate">
                             <label for="nowa">Whatsapp Number</label>
                         </div>
                         <div class="input-field">
@@ -29,7 +29,7 @@
                             <label for="email">Email</label>
                         </div>
                         <div class="input-field">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <textarea id="textarea1" name="pesan" required class="materialize-textarea"></textarea>
                             <label for="textarea1">Message</label>
                         </div>
                         <button type="submit" name="submit" class="btn green darken-3">

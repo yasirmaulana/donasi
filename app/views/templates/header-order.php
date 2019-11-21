@@ -24,15 +24,15 @@
                             </a>
                             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
-                                <li><a href="<?= BASEURL ?>/home/allCampaign">Donasi</a></li>
-                                <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
+                                <li><a href="<?= BASEURL ?>/home/allCampaign">Program</a></li>
+                                <!-- <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li> -->
                             </ul>
                         </div>
                     </div>
                 </nav>
 
                 <ul class="sidenav" id="mobile-nav">
-                    <li><a href="<?= BASEURL ?>/home/allCampaign">Donasi</a></li>
-                    <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
+                    <li><a href="<?= BASEURL ?>/home/allCampaign">Program</a></li>
+                    <!-- <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li> -->
                 </ul>
             </div>

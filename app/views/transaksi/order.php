@@ -91,7 +91,7 @@
 									<input type="hidden" class="validate" id="donasiId" name="donasiId" value="<?= $data['kampanye']['donasi_id'] ?>">
 									<input type="hidden" class="validate" id="kodeDonasi" name="kodeDonasi" value="<?= $data['kampanye']['inisial'] . date("YmdHis") ?>">
 									<input type="hidden" class="validate" id="itemName" name="itemName" value="<?= $data['kampanye']['judul'] ?>">
-								<button type="submit" class="btn green darken-3" name="btn-order">Ajukan Donasi</button>
+								<button type="submit" class="btn green darken-3" name="btn-order">Donasi Sekarang</button>
 							</form>
 						</div>
 					</div>

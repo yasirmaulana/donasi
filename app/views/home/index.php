@@ -30,49 +30,65 @@
                             </a>
                             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="right hide-on-med-and-down">
-                                <li><a href="#kampanye">Donasi</a></li>
-                                <!-- <li><a href="">Zakat</a></li> -->
-                                <!-- <li><a href="">Wakaf</a></li> -->
-                                <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
+                                <li><a href="#kampanye">Program</a></li>
+                                <!-- <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li> -->
                             </ul>
                         </div>
                     </div>
                 </nav>
 
+                <!-- <ul class="sidenav" id="mobile-nav"> -->
                 <ul class="sidenav" id="mobile-nav">
-                    <li><a href="#kampanye">Donasi</a></li>
-                    <!-- <li><a href="">Zakat</a></li> -->
-                    <!-- <li><a href="">Wakaf</a></li> -->
-                    <li><a href="<?= BASEURL ?>/laporan/">Laporan</a></li>
+                    <!-- <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="images/office.jpg">
+                            </div>
+                            <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                            <a href="#name"><span class="white-text name">John Doe</span></a>
+                            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                    <li><a href="#!">Second Link</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a class="subheader">Subheader</a></li>
+                    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+                    <li><a href="#kampanye">Program</a></li>
+
                 </ul>
+                            
             </div>
 
             <!-- slider  -->
             <div class="slider">
                 <ul class="slides">
                     <li>
-                        <img src="<?= BASEURL ?>/img/slider/donasi.jpg">
+                        <img src="<?= BASEURL ?>/img/slider/santri4.png">
                         <div class="caption left-align">
-                            <h3>#Berbagi</h3>
-                            <h5 class="light grey-text text-lighten-3">Membuat mereka tersenyum.</h5>
+                            <h3>#SantriPalestina</h3>
+                            <h5 class="light grey-text text-lighten-3">Palestina adalah jantung umat Islam Dunia.</h5>
+                            <a href="<?= BASEURL ?>/transaksi/index/3" class="waves-effect waves-light btn orange darken-2">Donasi Sekarang</a>
                         </div>
                     </li>
-                    <!-- <li>
-                        <img src="<?= BASEURL ?>/img/slider/zakat.jpg">
-                        <div class="caption left-align">
-                            <h3>#YuksZakat</h3>
-                            <h5 class="light grey-text text-lighten-3">Bersihkan Harta, Sucikan Jiwa.</h5>
-                        </div>
-                    </li> -->
                     <li>
-                        <img src="<?= BASEURL ?>/img/slider/wakaf.jpg">
+                        <img src="<?= BASEURL ?>/img/slider/santri.jpeg">
                         <div class="caption left-align">
-                            <h3>#KekalkanHarta</h3>
-                            <h5 class="light grey-text text-lighten-3">Harta itu dibawa mati, dengan cara di Wakafkan.</h5>
+                            <h3>#SedekahQuranUntukSantri</h3>
+                            <h5 class="light grey-text text-lighten-3">Pahala mengalir tanpa henti, menjadi investasi abadi.</h5>
+                            <a href="<?= BASEURL ?>/transaksi/index/1" class="waves-effect waves-light btn orange darken-2">Donasi Sekarang</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="<?= BASEURL ?>/img/slider/ota.JPG">
+                        <div class="caption left-align">
+                            <h3>#OrangTuaAsuh</h3>
+                            <h5 class="light grey-text text-lighten-3">bila ingin bahagia, berbagi kebahagianlah dengan orang lain</h5>
+                            <a href="<?= BASEURL ?>/transaksi/index/2" class="waves-effect waves-light btn orange darken-2">Donasi Sekarang</a>
                         </div>
                     </li>
                     <!-- <li>
-                        <img src="<?= BASEURL ?>/img/slider/kurban.jpg">
+                        <img src="<?= BASEURL ?>/img/slider/santri3.png">
                         <div class="caption left-align">
                             <h3>This is our big Tagline!</h3>
                             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -81,42 +97,22 @@
                 </ul>
             </div>
 
-            <!-- status penerimaan -->
-            <!-- <section id="stPenerima" name="stPernerima">
-                <div class="container">
-                    <div class="row">
-                        <h3 class="center light green-text text-darken-3">Status Penerimaan</h3>
-                        <div class="col m4 s12 light">
-                            <h5 class="center">1.234.456.789</h5>
-                            <p class="center">Dana terkumpul</p>
-                        </div>
-                        <div class="col m4 s12 light">
-                            <h5 class="center">35.234</h5>
-                            <p class="center">Donatur</p>
-                        </div>
-                        <div class="col m4 s12 light">
-                            <h5 class="center">13</h5>
-                            <p class="center">Program</p>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
             <!-- kampanye -->
             <section id="kampanye" class="kampanye grey lighten-3 scrollspy">
                 <div class="container">
                     <div class="row">
-                        <!-- <h3 class="light center green-text text-darken-3">Our Campaign</h3> -->
+                        <h3 class="light center green-text text-darken-3">Yuuks Berbagi dengan Mereka</h3>
                         <?php foreach($data['kampanye'] as $don) : ?>
                         <div class="col m4 s12">
                             <div class="card center hoverable">
                                 <div class="card-image">
                                     <img src="<?= BASEURL ?>/img/donasi/<?= $don["poster"] ?>">
-                                    <!-- <span class="card-title"><?= $don["judul"] ?></span> -->
+                                    <!-- <span class="card-title">
+                                        <div class="label">
+                                            <?= $don["judul"] ?>
+                                        </div>
+                                    </span> -->
                                 </div>
-                                <!-- <div class="card-title">
-                                    <div class="label"></div>         
-                                </div> -->
                                 <div class="card-content">
                                     <?= $don["deskripsi"] ?>
                                 </div>
@@ -147,35 +143,6 @@
               <div class="parallax"><img src="<?= BASEURL ?>/img/slider/wakaf.jpg" height="900"></div>
             </div> -->
 
-            <!-- zakat -->
-            <!-- <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col m8">
-                            <div class="card">
-                                <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-tabs">
-                                <ul class="tabs tabs-fixed-width">
-                                    <li class="tab"><a href="#test4">Test 1</a></li>
-                                    <li class="tab"><a class="active" href="#test5">Test 2</a></li>
-                                    <li class="tab"><a href="#test6">Test 3</a></li>
-                                </ul>
-                                </div>
-                                <div class="card-content grey lighten-4">
-                                <div id="test4">Test 1</div>
-                                <div id="test5">Test 2</div>
-                                <div id="test6">Test 3</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col m4">
-
-                        </div>
-                    </div>
-                </div>
-            </section> -->
          
 
         <!--JavaScript at end of body for optimized loading-->
@@ -187,9 +154,9 @@
             const slider = document.querySelectorAll('.slider')
             M.Slider.init(slider, {
                 indicators: false,
-                height: 500,
+                height: 600,
                 duration: 500,
-                interval: 3000
+                interval: 10000
             })
 
             const parallax = document.querySelectorAll('.parallax')

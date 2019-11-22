@@ -1,62 +1,64 @@
 <?php
-	date_default_timezone_set("Asia/Bangkok");
+	// date_default_timezone_set("Asia/Bangkok");
 
-	require_once('Veritrans.php');
+	// require_once('Veritrans.php');
 
-	//Set Your server key
-	Veritrans_Config::$serverKey = TOKEN_SERVER;
+	// //Set Your server key
+	// Veritrans_Config::$serverKey = TOKEN_SERVER;
 
-	// Uncomment for production environment
-	// Veritrans_Config::$isProduction = true;
+	// // Uncomment for production environment
+	// // Veritrans_Config::$isProduction = true;
 
-	// Enable sanitization
-	Veritrans_Config::$isSanitized = true;
+	// // Enable sanitization
+	// Veritrans_Config::$isSanitized = true;
 
-	// Enable 3D-Secure
-	Veritrans_Config::$is3ds = true;
+	// // Enable 3D-Secure
+	// Veritrans_Config::$is3ds = true;
 	
-	if(isset($_POST['btn-order'])){
+	// if(isset($_POST['btn-order'])){
 
-		$kodeId 	= $_POST['kodeDonasi']; 
-		$amount 	= $_POST['gross_amount'];
-		$nama 		= $_POST['nama'];
-		$nowa 		= $_POST['no_wa'];
-		$email 		= $_POST['email'];
-		$itemName 	= $_POST['itemName'];
+	// 	exit();
 
-		// Required
-		$transaction_details = array(
-			'order_id' => $kodeId,
-			'gross_amount' => $amount, // no decimal allowed for creditcard
-		);
+	// 	$kodeId 	= $_POST['kodeDonasi']; 
+	// 	$amount 	= $_POST['gross_amount'];
+	// 	$nama 		= $_POST['nama'];
+	// 	$nowa 		= $_POST['no_wa'];
+	// 	$email 		= $_POST['email'];
+	// 	$itemName 	= $_POST['itemName'];
+
+	// 	// Required
+	// 	$transaction_details = array(
+	// 		'order_id' => $kodeId,
+	// 		'gross_amount' => $amount, // no decimal allowed for creditcard
+	// 	);
 				
-		$customer_details = array (
-			'email' => $email,
-			'phone' => $nowa
-		); 
+	// 	$customer_details = array (
+	// 		'email' => $email,
+	// 		'phone' => $nowa
+	// 	); 
 
-		$item_detail = array (
-			'price' => $amount,
-			'quantity' => 1,
-			'name' => $itemName
-		);
+	// 	$item_detail = array (
+	// 		'price' => $amount,
+	// 		'quantity' => 1,
+	// 		'name' => $itemName
+	// 	);
 
-		$item_details = array ($item_detail);
+	// 	$item_details = array ($item_detail);
 
-		// Fill transaction details
-		$transaction = array(
-			'transaction_details' => $transaction_details,
-			'customer_details' => $customer_details,
-			'item_details' => $item_details
-		);
+	// 	// Fill transaction details
+	// 	$transaction = array(
+	// 		'transaction_details' => $transaction_details,
+	// 		'customer_details' => $customer_details,
+	// 		'item_details' => $item_details
+	// 	);
 		
-		$snapToken = Veritrans_Snap::getSnapToken($transaction);
-		// echo "snapToken = ".$snapToken;
+	// 	$snapToken = Veritrans_Snap::getSnapToken($transaction);
+	// 	// echo "snapToken = ".$snapToken;
 
-		$jalan = 1;
-	} 
+	// 	$jalan = 1;
+	// } 
 
-	// var_dump($data['kampanye']);
+	// var_dump($data['kanal']); 
 
 ?>
 
@@ -83,20 +85,34 @@
 									<input placeholder="Nama" type="text" class="validate" id="nama" name="nama">
 								</div>
 								<div class="input-field col s12">
-									<input placeholder="Nomor Whatsapp (Wajib diisi)" type="text" class="validate" id="no_wa" name="no_wa" Required>
+									<input placeholder="Nomor Whatsapp (Wajib diisi)" type="number" class="validate" id="no_wa" name="no_wa" Required>
 								</div>
 								<div class="input-field col s12">
-									<input placeholder="Email" type="text" class="validate" id="email" name="email" Required>
+									<input placeholder="Email" type="email" class="validate" id="email" name="email" Required>
 								</div>
 									<input type="hidden" class="validate" id="donasiId" name="donasiId" value="<?= $data['kampanye']['donasi_id'] ?>">
 									<input type="hidden" class="validate" id="kodeDonasi" name="kodeDonasi" value="<?= $data['kampanye']['inisial'] . date("YmdHis") ?>">
 									<input type="hidden" class="validate" id="itemName" name="itemName" value="<?= $data['kampanye']['judul'] ?>">
+									<input type="hidden" class="validate" id="kanal" name="kanal" value="<?= $data['kanal'] ?>">
 								<button type="submit" class="btn green darken-3" name="btn-order">Donasi Sekarang</button>
 							</form>
 						</div>
+						<!-- <hr> -->
+							<p>Metode Pembayaran</p>
+							<div class="row">
+								e-wallet<br>
+								<img src="<?= BASEURL ?>/img/payment/gopay.svg">
+							</div>
+							<div class="row">
+								ATM/Bank Transfer<br>
+								<img src="<?= BASEURL ?>/img/payment/mandiri.png" width="100px">
+								<img src="<?= BASEURL ?>/img/payment/bni-permata.png" width="180px"><br>
+								<img src="<?= BASEURL ?>/img/payment/bersama-prima-alto.png" width="180px">
+							</div>
 					</div>
 
 				</div>
+
 			</div>
 
 
@@ -106,7 +122,7 @@
 
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 
@@ -135,4 +151,4 @@
 			function numberWithCommas(x) {
 					return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 			}
-    </script>
+    </script> -->

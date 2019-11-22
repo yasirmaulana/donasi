@@ -9,8 +9,8 @@ define('DB_PASS', '');
 define('DB_NAME', 'go2aries_kauny');
 
 // TOKEN SANDBOX
-define('TOKEN_CLIENT', 'SB-Mid-client-AOUGLLEhcpgKSFqZ');
-define('TOKEN_SERVER', 'SB-Mid-server-lgozYreNBicq8KMGGGtTXpGj');
+define('TOKEN_CLIENT', 'SB-Mid-client-ZOlUChnfjWntd-wD');
+define('TOKEN_SERVER', 'SB-Mid-server-_2ia2kzQpO2Eor12DUeOEpj0');
 
 // TOKEN PRODUCTION
 // define('TOKEN_CLIENT', 'Mid-client-KwybLigk7zfn5U1j');

@@ -31,14 +31,15 @@ class Transaksi_model {
 
     public function tambahKonfirmasiDonasi($data)
     {
-        $query = "INSERT INTO portal_crm_konfirmasi_donasi(donatur_id, nominal, donasi_id, kode_transaksi) 
-                    value (:donatur_id, :nominal, :donasi_id, :kode_transaksi) ";
+        $query = "INSERT INTO portal_crm_konfirmasi_donasi(donatur_id, nominal, donasi_id, kode_transaksi, kanal) 
+                    value (:donatur_id, :nominal, :donasi_id, :kode_transaksi, :kanal) ";
 
         $this->db->query($query);
         $this->db->bind('donatur_id', $data['donatur_id']);
         $this->db->bind('nominal', $data['gross_amount']);
         $this->db->bind('donasi_id', $data['donasiId']);
         $this->db->bind('kode_transaksi', $data['kodeDonasi']);
+        $this->db->bind('kanal', $data['kanal']);
 
         $this->db->execute();
 

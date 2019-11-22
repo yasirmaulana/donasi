@@ -68,7 +68,7 @@
                         <div class="caption left-align">
                             <h3>#SantriPalestina</h3>
                             <h5 class="light grey-text text-lighten-3">Palestina adalah jantung umat Islam Dunia.</h5>
-                            <a href="<?= BASEURL ?>/transaksi/index/3" class="waves-effect waves-light btn orange darken-2">Donasi Sekarang</a>
+                            <a href="<?= BASEURL ?>/transaksi/index/4" class="waves-effect waves-light btn orange darken-2">Donasi Sekarang</a>
                         </div>
                     </li>
                     <li>

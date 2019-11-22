@@ -61,6 +61,7 @@
     M.FloatingActionButton.init(floatBnt, {
         direction: 'top'
     })
+
 </script>
 
 

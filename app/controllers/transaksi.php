@@ -1,9 +1,10 @@
 <?php
 
 class Transaksi extends Controller {
-    public function index($id)
+    public function index($id, $kanal = null)
     {
         $data['kampanye'] = $this->model('Kampanye_model')->getCampaign($id);
+        $data['kanal'] = $kanal;
 
         $this->view('templates/header-order');
         $this->view('transaksi/order', $data);

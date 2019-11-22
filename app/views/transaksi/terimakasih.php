@@ -17,6 +17,9 @@
 	
 	// if(isset($_POST['btn-order'])){
 
+        // var_dump($_POST);
+        // exit();
+
 		$kodeId 	= $data['transaksi']['kodeDonasi']; 
 		$amount 	= $data['transaksi']['gross_amount'];
 		$nama 		= $data['transaksi']['nama'];
